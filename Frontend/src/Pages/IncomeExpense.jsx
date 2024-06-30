@@ -1,6 +1,6 @@
 import React from 'react'
-import { Sidebar } from '../Components/Sidebar'
-import { Table } from '../Components/Table'
+import { Sidebar } from '../components/Sidebar'
+import { Table } from '../components/Table'
 
 const IncomeExpense = () => {
   return (

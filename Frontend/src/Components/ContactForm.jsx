@@ -9,8 +9,8 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_ID",
+      .sendForm("service_vke0nib", "template_gqjkir9", form.current, {
+        publicKey: "Bus87l3UC_DMxSao3",
       })
       .then(
         () => {
@@ -61,7 +61,7 @@ const ContactForm = () => {
                       />
                     </svg>
                     <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                      IITJ, Jodhpur, Rajasthan, 342037
+                      IIT Jodhpur, Rajasthan, 342037
                     </div>
                   </div>
 
@@ -105,7 +105,7 @@ const ContactForm = () => {
                       />
                     </svg>
                     <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                      info@acme.org
+                      b22ee022@iitj.ac.in
                     </div>
                   </div>
                 </div>

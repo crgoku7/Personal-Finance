@@ -1,4 +1,5 @@
 import React from "react";
+import Login from "./Login";
 
 const Hero = () => {
   return (
@@ -30,6 +31,7 @@ const Hero = () => {
             >
               Get Started
             </button>
+            <Login />
           </div>
         </div>
       </div>

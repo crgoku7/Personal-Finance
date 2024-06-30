@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { Navigate, useLocation, useNavigate } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const location = useLocation();
@@ -134,6 +134,7 @@ const Signup = () => {
                 >
                   Sign up
                 </button>
+                <Link to="/" className="items-center font-semibold">Already a user?</Link>
                 </div>
               </div>
             </form>

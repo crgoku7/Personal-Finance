@@ -1,12 +1,14 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
-import ProfileCard from "../Components/ProfileCard";
+import Navbar from "../components/Navbar";
+import ProfileCard from "../components/ProfileCard";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
     <div>
       <Navbar />
       <ProfileCard />
+      <Footer />
     </div>
   );
 };

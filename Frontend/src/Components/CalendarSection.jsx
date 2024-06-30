@@ -11,6 +11,7 @@ import enUS from "date-fns/locale/en-US";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
+import BudgetModal from "./BudgetModal";
 
 const locales = {
   "en-US": enUS,
@@ -114,93 +115,14 @@ const CalendarSection = () => {
 
   return (
     <div className="ml-64">
-      <div className="flex items-center justify-center ">
-        <div className="mx-auto w-full max-w-[550px] bg-white">
-          <form className="py-6 px-9" onSubmit={handleSubmit(onSubmit)}>
-            <div className="sm:col-span-3">
-              <label
-                htmlFor="category"
-                className="mb-3 block text-base font-medium text-[#07074D]"
-              >
-                Type:
-              </label>
-              <div className="mb-5">
-                <select
-                  id="category"
-                  value={selectedCategory}
-                  onChange={(e) => setSelectedCategory(e.target.value)}
-                  className="bg-white mb-1 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 text-gray-600 border-gray-300 rounded border"
-                >
-                  <option value="" disabled className="bg-white">
-                    -- Select an option --
-                  </option>
-                  <option value="Income">Income</option>
-                  <option value="Expense">Expense</option>
-                </select>
-              </div>
-            </div>
-            <div className="mb-5">
-              <label
-                htmlFor="title"
-                className="mb-3 block text-base font-medium text-[#07074D]"
-              >
-                Title:
-              </label>
-              <input
-                type="text"
-                name="title"
-                id="title"
-                value={newEvent.title}
-                onChange={(e) =>
-                  setNewEvent({ ...newEvent, title: e.target.value })
-                }
-                placeholder="Enter the title"
-                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-              />
-            </div>
-            <div className="mb-5">
-              <label
-                htmlFor="budget_date"
-                className="mb-3 block text-base font-medium text-[#07074D]"
-              >
-                Date:
-              </label>
-              <DatePicker
-                className="bg-white w-full rounded-md border mb-2 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                placeholder="Select Date"
-                id="budget_date"
-                selected={newEvent.start}
-                onChange={(date) =>
-                  setNewEvent({ ...newEvent, start: date, end: date })
-                }
-              />
-              <label
-                htmlFor="budget_amount"
-                className="mb-3 block text-base font-medium text-[#07074D]"
-              >
-                Amount:
-              </label>
-              <input
-                type="number"
-                className="bg-white w-full rounded-md border border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                placeholder="Add amount"
-                id="budget_amount"
-                value={newEvent.amount}
-                onChange={(e) =>
-                  setNewEvent({ ...newEvent, amount: e.target.value })
-                }
-              />
-            </div>
-            <div>
-              <button
-                type="submit"
-                className="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none"
-              >
-                Add the budget
-              </button>
-            </div>
-          </form>
-        </div>
+      <div>
+        <button
+          onClick={() => document.getElementById("budget_modal").showModal()}
+          className="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-20 text-center text-base font-semibold text-white outline-none"
+        >
+          Add a budget
+        </button>
+        <BudgetModal />
       </div>
       <div>
         <Calendar

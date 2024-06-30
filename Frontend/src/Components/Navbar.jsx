@@ -49,7 +49,7 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <Link to="/" className="btn btn-ghost text-xl">Finance</Link>
+          <Link to="/" className="btn btn-ghost text-xl">ArthChitra</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -66,7 +66,7 @@ function Navbar() {
               <Link to="/dashboard">Dashboard</Link>
             </li>
             <li>
-              <Link to="/finance-calculator">Calculator</Link>
+              <Link to="/calculator">Calculator</Link>
             </li>
           </ul>
         </div>

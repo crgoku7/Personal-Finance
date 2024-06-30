@@ -3,6 +3,8 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import cors from "cors";
 import userRoute from "./route/user.route.js";
+import incomeExpenseRoute from "./route/income_expense.route.js";
+import budgetRoute from "./route/budget.route.js";
 
 const app = express();
 
@@ -27,9 +29,9 @@ try {
 
 app.use("/user", userRoute);
 
-app.use("/budget", budgetRoute);
-
 app.use("/incomeExpense", incomeExpenseRoute);
+
+app.use("/budget", budgetRoute);
 
 app.listen(PORT, () =>{
     console.log(`Example App listening on port ${PORT}`);

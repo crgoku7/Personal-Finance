@@ -1,6 +1,6 @@
 import React from 'react'
-import { Sidebar } from '../Components/Sidebar'
-import CalendarSection from '../Components/CalendarSection'
+import { Sidebar } from '../components/Sidebar'
+import CalendarSection from '../components/CalendarSection'
 
 const BudgetPlanner = () => {
   return (
