@@ -27,6 +27,10 @@ try {
 
 app.use("/user", userRoute);
 
+app.use("/budget", budgetRoute);
+
+app.use("/incomeExpense", incomeExpenseRoute);
+
 app.listen(PORT, () =>{
     console.log(`Example App listening on port ${PORT}`);
 });
