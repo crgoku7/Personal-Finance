@@ -15,12 +15,12 @@ import SukanyaSamriddhi from "./Pages/SukanyaSamriddhi";
 import BudgetPlanner from "./Pages/BudgetPlanner";
 import ExpenseOverview from "./Pages/ExpenseOverview";
 import IncomeOverview from "./Pages/IncomeOverview";
-import SeniorCitizensSavingsScheme from "./components/Finance Calculator/SeniorCitizensSavingsScheme";
-import MahilaSammanSavings from "./components/Finance Calculator/MahilaSammanSavings";
-import MonthlyIncomeScheme from "./components/Finance Calculator/MonthlyIncomeScheme";
-import NationalSavings from "./components/Finance Calculator/NationalSavings";
-import FloatingRateSavingsBonds from "./components/Finance Calculator/FloatingRateSavingsBonds";
-import SovereignGoldBondScheme from "./components/Finance Calculator/SovereignGoldBondScheme";
+import SeniorCitizensSavingsScheme from "./components/FinanceCalculator/SeniorCitizensSavingsScheme";
+import MahilaSammanSavings from "./components/FinanceCalculator/MahilaSammanSavings";
+import MonthlyIncomeScheme from "./components/FinanceCalculator/MonthlyIncomeScheme";
+import NationalSavings from "./components/FinanceCalculator/NationalSavings";
+import FloatingRateSavingsBonds from "./components/FinanceCalculator/FloatingRateSavingsBonds";
+import SovereignGoldBondScheme from "./components/FinanceCalculator/SovereignGoldBondScheme";
 
 function App() {
   const [authUser, setAuthUser] = useAuth();

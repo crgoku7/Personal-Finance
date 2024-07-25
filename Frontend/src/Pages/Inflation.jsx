@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import InflationForm from '../components/Finance Calculator/InflationForm'
+import InflationForm from '../components/FinanceCalculator/InflationForm'
 
 const Inflation = () => {
   return (

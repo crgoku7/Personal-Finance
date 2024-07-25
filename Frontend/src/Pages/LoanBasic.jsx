@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import LoanBasicForm from "../components/Finance Calculator/LoanBasicForm";
+import LoanBasicForm from "../components/FinanceCalculator/LoanBasicForm";
 
 const LoanBasic = () => {
   return (

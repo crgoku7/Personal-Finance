@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import CalculatorSection from "../components/Finance Calculator/CalculatorSection";
+import CalculatorSection from "../components/FinanceCalculator/CalculatorSection";
 
 const FinanceCalculator = () => {
   const info1 = {
